@@ -1,0 +1,85 @@
+album {
+  name: "Book of Souls"
+  release_year: 2015
+  artist_name: "Iron Maiden"
+  genre: METAL
+  review {
+    reviewer: "Rolling Stone"
+    score: 3.5
+    max_value: 5.0
+    type: STARS
+  }
+  review {
+    reviewer: "Blabbermouth.net"
+    score: 9.5
+    max_value: 10.0
+    type: NUMBER
+  }
+}
+album {
+  name: "In Their Darkened Shrines"
+  release_year: 2002
+  artist_name: "Nile"
+  genre: DEATH_METAL
+  review {
+    reviewer: "Allmusic"
+    score: 4.5
+    max_value: 5.0
+    type: STARS
+  }
+}
+album {
+  name: "The Fragile"
+  release_year: 1999
+  artist_name: "Nine Inch Nails"
+  genre: INDUSTRIAL
+  review {
+    reviewer: "Rolling Stone"
+    score: 4.0
+    max_value: 5.0
+    type: STARS
+  }
+  review {
+    reviewer: "Allmusic"
+    score: 3.0
+    max_value: 5.0
+    type: STARS
+  }
+}
+album {
+  name: "Revival"
+  release_year: 2017
+  artist_name: "Eminem"
+  genre: RAP
+  review {
+    reviewer: "Metacritic"
+    score: 2.5
+    max_value: 5.0
+    type: STARS
+  }
+  review {
+    reviewer: "Independent"
+    score: 9.0
+    max_value: 10.0
+    type: NUMBER
+  }
+  track {
+    title: "Believe"
+    duration: 315
+  }
+  track {
+    title: "River"
+    featuring: "Ed Sheeran"
+    duration: 341
+  }
+  track {
+    title: "Walk on Water"
+    featuring: "Beyonce"
+    duration: 304
+  }
+  track {
+    title: "Need Me"
+    featuring: "P!nk"
+    duration: 265
+  }
+}

@@ -1,0 +1,53 @@
+syntax = "proto2";
+
+package music;
+
+option java_package = "com.example.music";
+option java_outer_classname = "AlbumsProtos";
+
+message Album {
+    optional string name = 1;
+    optional int32 release_year = 2;
+    optional string artist_name = 3;    
+
+    enum Genre {
+        UNSPECIFIED =  0;
+        ROCK = 1;
+        CLASSICAL = 2;
+        PUNK = 3;
+        METAL = 4; 
+        DEATH_METAL = 5;
+        POP = 6;
+        INDUSTRIAL = 7;
+        // New genres
+        RAP = 8;
+        JAZZ = 9;
+        REGGAE = 10;
+    }
+
+    optional Genre genre = 4;
+
+    message Review {
+        optional string reviewer = 1;
+        optional float score = 2;
+        optional float max_value = 3;
+        enum Type {
+            NUMBER = 0;
+            STARS = 1;
+        }
+        optional Type type = 4 [default = NUMBER];
+    }
+    repeated Review review = 5;
+
+    // New submessage
+    message Track {
+        optional string title = 1;
+        optional string featuring = 2;
+        optional int32 duration = 3;
+    }
+    repeated Track track = 6;
+}
+
+message Albums {
+    repeated Album album = 1;
+}
